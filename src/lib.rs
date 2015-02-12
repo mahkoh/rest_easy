@@ -1,8 +1,9 @@
-#![feature(plugin_registrar, plugin)]
+#![feature(plugin_registrar, plugin, rustc_private)]
+#![plugin(syntax, rustc)]
 
-#[plugin] #[macro_use]
+#[macro_use]
 extern crate syntax;
-#[plugin] #[macro_use]
+#[macro_use]
 extern crate rustc;
 
 
